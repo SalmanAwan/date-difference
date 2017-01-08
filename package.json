@@ -1,0 +1,16 @@
+{
+  "name": "date-difference",
+  "version": "1.0.0",
+  "description": "Compute difference between two dates without using SDK libraries for date manipulation (e.g. Date, Calendar classes) etc.",
+  "main": "index.js",
+  "scripts": {
+    "app": "babel-node ./src/index.js"
+  },
+  "author": "Salman Awan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "bluebird": "^3.4.7"
+  }
+}

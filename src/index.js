@@ -1,4 +1,5 @@
 import InputProcessor from './InputProcessor.js'
 
-var dates = new InputProcessor().readTestData()
+var dates = InputProcessor.readTestData()
 
+console.log(dates)

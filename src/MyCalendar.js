@@ -44,9 +44,11 @@ class MyCalendar {
         const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         const FEBRUARY = 2
 
-        let daysOfMonth = DAYS_IN_MONTH[date.month - 1]
+        let {month, year} = date
 
-        if(this.isLeapYear(date.year) && date.month == FEBRUARY) { daysOfMonth += 1 }
+        let daysOfMonth = DAYS_IN_MONTH[month - 1]
+
+        if(this.isLeapYear(year) && month == FEBRUARY) { daysOfMonth += 1 }
 
         return daysOfMonth
     }
@@ -75,16 +77,17 @@ class MyCalendar {
     }
 
     static lastDateOfYear(year) {
-        return new MyDate(String(31), String(12), String(year))
+        return new MyDate(31, 12, year)
     }
 
     static firstDateOfYear(year) {
-        return new MyDate(String(1), String(1), String(year))
+        return new MyDate(1, 1, year)
     }
 
     static lastDateOfMonth(date) {
         let totalDaysInMonth = this.getDaysOfMonth(date)
-        return  new MyDate(totalDaysInMonth, String(date.month), String(date.year))
+        let {month, year} = date
+        return  new MyDate(totalDaysInMonth, month, year)
     }
 
     static isValidDate(date) {
@@ -92,11 +95,13 @@ class MyCalendar {
     }
 
     static isValidDay(date) {
-        return 1 <= date.day && date.day <= this.getDaysOfMonth(date)
+        let {day} = date
+        return 1 <= day && day <= this.getDaysOfMonth(date)
     }
 
     static isValidMonth(date) {
-        return 1 <= date.month && date.month <= 12
+        let {month} = date
+        return 1 <= month && month <= 12
     }
 
     static isValidYear(year) {

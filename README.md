@@ -51,11 +51,11 @@ Follow [IntelliJ Setup] for enabling ES6 support
 
 01 01 2016, 31 01 2016, 31	- Jan
 01 02 2016, 29 02 2016, 29	- Feb (Leap Year)
-01 03 2016, 31 03 2016, 31	- Ma
+01 03 2016, 31 03 2016, 31	- Mar
 01 04 2016, 30 04 2016, 30	- Apr
 01 05 2016, 31 05 2016, 31	- May
-01 06 2016, 30 06 2016, 30	- June
-01 07 2016, 31 07 2016, 31	- July
+01 06 2016, 30 06 2016, 30	- Jun
+01 07 2016, 31 07 2016, 31	- Jul
 01 08 2016, 31 08 2016, 31	- Aug
 01 09 2016, 30 09 2016, 30	- Sep
 01 10 2016, 31 10 2016, 31	- Oct
@@ -79,8 +79,8 @@ Follow [IntelliJ Setup] for enabling ES6 support
 29 02 2015, 01 03 2016, -1	- Invalid - Day out of Range (For non-leap year)
 01 13 2016, 01 12 2016, -1	- Invalid - Month Out of Range
 
-01 2016, 01 12 99991		- Invalid - Incomplete date 	(WONT PRINT)
-01 01 2016, 01 12 99991		- Invalid - Year out of Range  	(WONT PRINT)
+01 2016, 01 12 99991		- Invalid - Format day 	(WON'T PRINT)
+01 01 2016, 01 12 99991		- Invalid - Format year (WON'T PRINT)
 ```
 
 

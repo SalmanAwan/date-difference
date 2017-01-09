@@ -1,14 +1,4 @@
-import DataReader from './DataReader.js'
-import os from 'os'
+import InputProcessor from './InputProcessor.js'
 
-new DataReader().readTestData().then(
-    dates => {
-        var array = dates.toString().split(os.EOL)
-        console.log(array)
-    },
-    err => {
-        console.log(err)
-    }
-)
-
+var dates = new InputProcessor().readTestData()
 

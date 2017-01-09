@@ -22,7 +22,7 @@ class InputProcessor {
     }
 
     static validateDatePairStr(pair) {
-        const DATE_PAIR_REGEX = /\d{2} \d{2} \d{4}, \d{2} \d{2} \d{4}/
+        const DATE_PAIR_REGEX = /^\d{2} \d{2} \d{4}, \d{2} \d{2} \d{4}$/
         return pair.trim().match(DATE_PAIR_REGEX)
     }
 
